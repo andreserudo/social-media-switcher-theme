@@ -5,13 +5,6 @@
   font-family: 'Inter', sans-serif;
 }
 
-//- White (BG): hsl(0, 0%, 100%)
-//- Very Pale Blue (Top BG Pattern): hsl(225, 100%, 98%)
-//- Light Grayish Blue (Card BG): hsl(227, 47%, 96%)
-//- Dark Grayish Blue (Text): hsl(228, 12%, 44%)
-//- Very Dark Blue (Text): hsl(230, 17%, 14%)
-
-
 // Light Theme
 $backgroundPage: rgb(255, 255, 255);
 $backgroundHeader: rgb(248, 249, 254);
@@ -27,3 +20,17 @@ $darkTitleColor: hsl(0, 0%, 100%);
 $darkTextColor: hsl(228, 34%, 66%);
 $darkHrColor: rgba(139, 151, 198, 0.2);
 $darkCardColor: rgb(37, 42, 65);
+
+.up {
+  color: rgb(29, 180, 137);
+  font-weight: bolder;
+  font-size: smaller;
+  padding-left: .2rem;
+}
+
+.down {
+  color: rgb(220, 65, 76);
+  font-weight: bolder;
+  font-size: smaller;
+  padding-left: .2rem;
+}

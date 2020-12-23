@@ -88,6 +88,17 @@ body {
           .social {
             display: flex;
             align-items: center;
+            font-weight: 700;
+            font-size: smaller;
+          }
+          .media-title {
+            font-size: 4rem;
+            font-weight: 700;
+          }
+          .media-members-name {
+            font-weight: 200;
+            font-size: small;
+            letter-spacing: .3rem;
           }
           .value {
             display: flex;
