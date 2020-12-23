@@ -46,6 +46,10 @@ body .content section .medias .item-media .media-title {
   color: #1e202a;
 }
 
+body .content section .medias .item-media:hover {
+  background: #e1e3f0;
+}
+
 body .content.dark {
   background: #1e202a;
 }
@@ -96,6 +100,10 @@ body .content.dark section .medias .item-media {
 
 body .content.dark section .medias .item-media .media-title {
   color: white;
+}
+
+body .content.dark section .medias .item-media:hover {
+  background: #333a56;
 }
 
 body .content, body .content.dark {
@@ -192,6 +200,7 @@ body .content section .medias .item-media, body .content.dark section .medias .i
           justify-content: center;
   padding: 2rem 0 1rem 0;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 body .content section .medias .item-media .social, body .content.dark section .medias .item-media .social {

@@ -22,6 +22,9 @@ body {
             color: $titleColor;
           }
         }
+        .item-media:hover {
+          background: $cardColorHover;
+        }        
       }      
     }
   }
@@ -87,6 +90,7 @@ body {
 
           padding: 2rem 0 1rem 0;
           border-radius: 5px;
+          cursor: pointer;
           .social {
             display: flex;
             align-items: center;
