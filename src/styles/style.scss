@@ -1,4 +1,15 @@
 @import "defaultSettings";
 
 body {
+  .content { 
+    background: $backgroundPage;
+    header {
+      background: $backgroundHeader;
+    }  
+  }
+
+  .content.dark {
+    @import "darkTheme";
+  }
 }
+
