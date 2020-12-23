@@ -3,5 +3,26 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body .content {
+  background: white;
+}
+
+body .content header {
+  background: #f8f9fe;
+}
+
+body .content.dark * {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body .content.dark header {
+  background: #1f212e;
 }
 /*# sourceMappingURL=style.css.map */
