@@ -1,8 +1,7 @@
 @import "defaultSettings";
 
 body {
-  .content { 
-    background: $backgroundPage;
+  .content {     
     header {
       background: $backgroundHeader;   
       color: $textColor;
@@ -12,10 +11,14 @@ body {
       hr {
         border-color: $hrColor;
       }      
-    }  
+    }
+    section {
+      background: $backgroundPage;
+    }
   }
 
   .content.dark {
+    background: $darkBackgroundPage;
     @import "darkTheme";
   }
 
@@ -23,17 +26,18 @@ body {
     height: 100vh;    
     display: flex;
     flex-direction: column;
-    align-items: center;    
+    //align-items: center;    
     header {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
       justify-content: center;
-      width: 100%;
+      //width: 100%;
       padding: 2.5rem 2rem 6rem 2rem;
       border-bottom-left-radius: 20px;
       border-bottom-right-radius: 20px;
-      .text {        
+      .text {
+        //width: 100%;
         h1 {
           font-size: 1.5rem;
         }
@@ -54,6 +58,26 @@ body {
         justify-content: space-between;
         font-weight: bolder;
         font-size: .87rem;
+      }
+    }
+
+    section {
+      width: 100%;
+      .medias {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    .attribution  {
+      width: 100%;
+      display: flex;      
+      align-items: center;
+      justify-content: center;
+      font-size: 11px; 
+      text-align: center;
+      a {
+        color: hsl(228, 45%, 44%);
       }
     }
   }
