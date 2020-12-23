@@ -122,6 +122,14 @@ body .content section .medias, body .content.dark section .medias {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .content section .medias .item-media, body .content.dark section .medias .item-media {
+  width: 90%;
+  border: 1px solid black;
 }
 
 body .content .attribution, body .content.dark .attribution {
