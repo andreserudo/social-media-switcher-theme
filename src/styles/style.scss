@@ -11,5 +11,20 @@ body {
   .content.dark {
     @import "darkTheme";
   }
+
+  .content, .content.dark {
+    header {
+      padding: 2rem 2rem;
+      .text {
+        padding-bottom: 1.5rem;
+        h1 {
+          font-size: 1.5rem;
+        }
+        span {
+          //font-size: ;
+        }
+      }
+    }
+  }
 }
 

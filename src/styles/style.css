@@ -25,4 +25,16 @@ body .content.dark * {
 body .content.dark header {
   background: #1f212e;
 }
+
+body .content header, body .content.dark header {
+  padding: 2rem 2rem;
+}
+
+body .content header .text, body .content.dark header .text {
+  padding-bottom: 1.5rem;
+}
+
+body .content header .text h1, body .content.dark header .text h1 {
+  font-size: 1.5rem;
+}
 /*# sourceMappingURL=style.css.map */
