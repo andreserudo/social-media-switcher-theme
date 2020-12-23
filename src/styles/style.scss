@@ -90,6 +90,10 @@ body {
             align-items: center;
             font-weight: 700;
             font-size: smaller;
+            padding-bottom: 1rem;
+            span {
+              padding-left: .5rem;
+            }
           }
           .media-title {
             font-size: 4rem;
@@ -103,7 +107,16 @@ body {
           .value {
             display: flex;
             align-items: center;
+            padding-top: 2rem;
           }          
+        }
+
+        .item-media:first-of-type {
+          margin-bottom: 1.5rem;
+        }
+
+        .item-media + .item-media {
+          margin-bottom: 1.5rem;
         }
       }
     }

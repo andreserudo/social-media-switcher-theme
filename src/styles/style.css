@@ -201,6 +201,11 @@ body .content section .medias .item-media .social, body .content.dark section .m
           align-items: center;
   font-weight: 700;
   font-size: smaller;
+  padding-bottom: 1rem;
+}
+
+body .content section .medias .item-media .social span, body .content.dark section .medias .item-media .social span {
+  padding-left: .5rem;
 }
 
 body .content section .medias .item-media .media-title, body .content.dark section .medias .item-media .media-title {
@@ -221,6 +226,15 @@ body .content section .medias .item-media .value, body .content.dark section .me
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-top: 2rem;
+}
+
+body .content section .medias .item-media:first-of-type, body .content.dark section .medias .item-media:first-of-type {
+  margin-bottom: 1.5rem;
+}
+
+body .content section .medias .item-media + .item-media, body .content.dark section .medias .item-media + .item-media {
+  margin-bottom: 1.5rem;
 }
 
 body .content .attribution, body .content.dark .attribution {
