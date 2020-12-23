@@ -106,6 +106,15 @@ body .content.dark section .medias .item-media:hover {
   background: #333a56;
 }
 
+body .content.dark section .overview h2 {
+  color: white;
+}
+
+body .content.dark section .overview .items {
+  background: #252a41;
+  color: #8b97c6;
+}
+
 body .content, body .content.dark {
   height: 100vh;
   display: -webkit-box;
@@ -265,6 +274,22 @@ body .content section .medias .item-media.instagram, body .content.dark section 
 
 body .content section .medias .item-media.youtube, body .content.dark section .medias .item-media.youtube {
   border-top: 5px solid #c4032a;
+}
+
+body .content section .overview, body .content.dark section .overview {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 body .content .attribution, body .content.dark .attribution {
