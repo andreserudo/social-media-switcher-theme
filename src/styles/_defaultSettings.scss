@@ -5,6 +5,12 @@
   font-family: 'Inter', sans-serif;
 }
 
+$facebookBorderColor: rgb(23, 145, 245);
+$twitterBorderColor: rgb(28, 160, 242);
+//$instagramBorderColor: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+$instagramBorderColor: linear-gradient(90deg, hsl(37, 97%, 70%) 0%, hsl(329, 70%, 58%) 100%);
+$youtubeBorderColor: rgb(196, 3, 42);
+
 // Light Theme
 $backgroundPage: rgb(255, 255, 255);
 $backgroundHeader: rgb(248, 249, 254);

@@ -171,6 +171,8 @@ body .content section .medias, body .content.dark section .medias {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+  top: -60px;
 }
 
 body .content section .medias .item-media, body .content.dark section .medias .item-media {
@@ -189,7 +191,7 @@ body .content section .medias .item-media, body .content.dark section .medias .i
       -ms-flex-pack: center;
           justify-content: center;
   padding: 2rem 0 1rem 0;
-  border: 1px solid black;
+  border-radius: 5px;
 }
 
 body .content section .medias .item-media .social, body .content.dark section .medias .item-media .social {
@@ -235,6 +237,25 @@ body .content section .medias .item-media:first-of-type, body .content.dark sect
 
 body .content section .medias .item-media + .item-media, body .content.dark section .medias .item-media + .item-media {
   margin-bottom: 1.5rem;
+}
+
+body .content section .medias .item-media.facebook, body .content.dark section .medias .item-media.facebook {
+  border-top: 5px solid #1791f5;
+}
+
+body .content section .medias .item-media.twitter, body .content.dark section .medias .item-media.twitter {
+  border-top: 5px solid #1ca0f2;
+}
+
+body .content section .medias .item-media.instagram, body .content.dark section .medias .item-media.instagram {
+  background-repeat: no-repeat;
+  background-size: 100% 5px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#fdc468), to(#df4996));
+  background-image: linear-gradient(90deg, #fdc468 0%, #df4996 100%);
+}
+
+body .content section .medias .item-media.youtube, body .content.dark section .medias .item-media.youtube {
+  border-top: 5px solid #c4032a;
 }
 
 body .content .attribution, body .content.dark .attribution {
