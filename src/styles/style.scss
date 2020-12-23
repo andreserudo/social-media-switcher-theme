@@ -14,6 +14,15 @@ body {
     }
     section {
       background: $backgroundPage;
+      .medias {
+        .item-media {
+          background: $cardColor;
+          color: $textColor;
+          .media-title {
+            color: $titleColor;
+          }
+        }
+      }      
     }
   }
 
@@ -68,8 +77,22 @@ body {
         flex-direction: column;
         align-items: center;
         .item-media {      
-          width: 90%;    
+          width: 90%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+          padding: 2rem 0 1rem 0;
           border: 1px solid black;
+          .social {
+            display: flex;
+            align-items: center;
+          }
+          .value {
+            display: flex;
+            align-items: center;
+          }          
         }
       }
     }
