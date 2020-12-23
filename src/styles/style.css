@@ -6,6 +6,20 @@
   font-family: 'Inter', sans-serif;
 }
 
+.up {
+  color: #1db489;
+  font-weight: bolder;
+  font-size: smaller;
+  padding-left: .2rem;
+}
+
+.down {
+  color: #dc414c;
+  font-weight: bolder;
+  font-size: smaller;
+  padding-left: .2rem;
+}
+
 body .content header {
   background: #f8f9fe;
   color: #63687e;
@@ -23,6 +37,19 @@ body .content section {
   background: white;
 }
 
+body .content section .medias .item-media {
+  background: #f0f2fa;
+  color: #63687e;
+}
+
+body .content section .medias .item-media .media-title {
+  color: #1e202a;
+}
+
+body .content section .medias .item-media:hover {
+  background: #e1e3f0;
+}
+
 body .content.dark {
   background: #1e202a;
 }
@@ -33,6 +60,20 @@ body .content.dark * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: 'Inter', sans-serif;
+}
+
+body .content.dark .up {
+  color: #1db489;
+  font-weight: bolder;
+  font-size: smaller;
+  padding-left: .2rem;
+}
+
+body .content.dark .down {
+  color: #dc414c;
+  font-weight: bolder;
+  font-size: smaller;
+  padding-left: .2rem;
 }
 
 body .content.dark header {
@@ -50,6 +91,19 @@ body .content.dark header hr {
 
 body .content.dark section {
   background: #1e202a;
+}
+
+body .content.dark section .medias .item-media {
+  background: #252a41;
+  color: #8b97c6;
+}
+
+body .content.dark section .medias .item-media .media-title {
+  color: white;
+}
+
+body .content.dark section .medias .item-media:hover {
+  background: #333a56;
 }
 
 body .content, body .content.dark {
@@ -122,6 +176,95 @@ body .content section .medias, body .content.dark section .medias {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  top: -60px;
+}
+
+body .content section .medias .item-media, body .content.dark section .medias .item-media {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2rem 0 1rem 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+body .content section .medias .item-media .social, body .content.dark section .medias .item-media .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 700;
+  font-size: smaller;
+  padding-bottom: 1rem;
+}
+
+body .content section .medias .item-media .social span, body .content.dark section .medias .item-media .social span {
+  padding-left: .5rem;
+}
+
+body .content section .medias .item-media .media-title, body .content.dark section .medias .item-media .media-title {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+body .content section .medias .item-media .media-members-name, body .content.dark section .medias .item-media .media-members-name {
+  font-weight: 200;
+  font-size: small;
+  letter-spacing: .3rem;
+}
+
+body .content section .medias .item-media .value, body .content.dark section .medias .item-media .value {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 2rem;
+}
+
+body .content section .medias .item-media:first-of-type, body .content.dark section .medias .item-media:first-of-type {
+  margin-bottom: 1.5rem;
+}
+
+body .content section .medias .item-media + .item-media, body .content.dark section .medias .item-media + .item-media {
+  margin-bottom: 1.5rem;
+}
+
+body .content section .medias .item-media.facebook, body .content.dark section .medias .item-media.facebook {
+  border-top: 5px solid #1791f5;
+}
+
+body .content section .medias .item-media.twitter, body .content.dark section .medias .item-media.twitter {
+  border-top: 5px solid #1ca0f2;
+}
+
+body .content section .medias .item-media.instagram, body .content.dark section .medias .item-media.instagram {
+  background-repeat: no-repeat;
+  background-size: 100% 5px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#fdc468), to(#df4996));
+  background-image: linear-gradient(90deg, #fdc468 0%, #df4996 100%);
+}
+
+body .content section .medias .item-media.youtube, body .content.dark section .medias .item-media.youtube {
+  border-top: 5px solid #c4032a;
 }
 
 body .content .attribution, body .content.dark .attribution {

@@ -14,6 +14,18 @@ body {
     }
     section {
       background: $backgroundPage;
+      .medias {
+        .item-media {
+          background: $cardColor;
+          color: $textColor;
+          .media-title {
+            color: $titleColor;
+          }
+        }
+        .item-media:hover {
+          background: $cardColorHover;
+        }        
+      }      
     }
   }
 
@@ -66,6 +78,70 @@ body {
       .medias {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        position: relative;
+        top: -60px;
+        .item-media {      
+          width: 90%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+          padding: 2rem 0 1rem 0;
+          border-radius: 5px;
+          cursor: pointer;
+          .social {
+            display: flex;
+            align-items: center;
+            font-weight: 700;
+            font-size: smaller;
+            padding-bottom: 1rem;
+            span {
+              padding-left: .5rem;
+            }
+          }
+          .media-title {
+            font-size: 4rem;
+            font-weight: 700;
+          }
+          .media-members-name {
+            font-weight: 200;
+            font-size: small;
+            letter-spacing: .3rem;
+          }
+          .value {
+            display: flex;
+            align-items: center;
+            padding-top: 2rem;
+          }          
+        }
+
+        .item-media:first-of-type {
+          margin-bottom: 1.5rem;
+        }
+
+        .item-media + .item-media {
+          margin-bottom: 1.5rem;
+        }
+
+        .item-media.facebook {
+          border-top: 5px solid $facebookBorderColor;          
+        }
+
+        .item-media.twitter {
+          border-top: 5px solid $twitterBorderColor;
+        }
+
+        .item-media.instagram {          
+          background-repeat: no-repeat;
+          background-size: 100% 5px;          
+          background-image: $instagramBorderColor;
+        }
+        
+        .item-media.youtube {
+          border-top: 5px solid $youtubeBorderColor;
+        }        
       }
     }
 

@@ -13,4 +13,16 @@ header {
 
 section {
   background: $darkBackgroundPage;
+  .medias {
+    .item-media {
+      background: $darkCardColor;      
+      color: $darkTextColor;
+      .media-title {
+        color: $darkTitleColor;
+      }
+    }
+    .item-media:hover {
+      background: $darkCardColorHover;
+    }
+  }
 }
