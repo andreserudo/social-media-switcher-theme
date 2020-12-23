@@ -10,8 +10,17 @@
 //- Light Grayish Blue (Card BG): hsl(227, 47%, 96%)
 //- Dark Grayish Blue (Text): hsl(228, 12%, 44%)
 //- Very Dark Blue (Text): hsl(230, 17%, 14%)
+
+
 // Light Theme
 $backgroundPage: hsl(0, 0%, 100%);
 $backgroundHeader: rgb(248, 249, 254);
+$titleColor: hsl(230, 17%, 14%);
+$textColor: hsl(228, 12%, 44%);
+$hrColor: rgba(99, 104, 126, 0.2);
 
+// Dark Theme
 $darkBackgroudHeader: hsl(232, 19%, 15%);
+$darkTitleColor: hsl(0, 0%, 100%);
+$darkTextColor: hsl(228, 34%, 66%);
+$darkHrColor: rgba(139, 151, 198, 0.2);

@@ -2,4 +2,11 @@
 
 header {
   background: $darkBackgroudHeader;
+  color: $darkTextColor;
+  h1 {
+    color: $darkTitleColor;
+  }
+  hr {
+    border-color: $darkHrColor;
+  }
 }

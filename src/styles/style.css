@@ -12,6 +12,15 @@ body .content {
 
 body .content header {
   background: #f8f9fe;
+  color: #63687e;
+}
+
+body .content header h1 {
+  color: #1e202a;
+}
+
+body .content header hr {
+  border-color: rgba(99, 104, 126, 0.2);
 }
 
 body .content.dark * {
@@ -24,6 +33,15 @@ body .content.dark * {
 
 body .content.dark header {
   background: #1f212e;
+  color: #8b97c6;
+}
+
+body .content.dark header h1 {
+  color: white;
+}
+
+body .content.dark header hr {
+  border-color: rgba(139, 151, 198, 0.2);
 }
 
 body .content, body .content.dark {
@@ -64,10 +82,16 @@ body .content header .text h1, body .content.dark header .text h1 {
   font-size: 1.5rem;
 }
 
+body .content header .text span, body .content.dark header .text span {
+  font-weight: bolder;
+  font-size: .87rem;
+}
+
 body .content header hr, body .content.dark header hr {
   width: 100%;
   margin-top: 1rem;
   margin-bottom: 1rem;
+  border-radius: 25%;
 }
 
 body .content header .switcher, body .content.dark header .switcher {
@@ -78,5 +102,7 @@ body .content header .switcher, body .content.dark header .switcher {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  font-weight: bolder;
+  font-size: .87rem;
 }
 /*# sourceMappingURL=style.css.map */

@@ -4,7 +4,14 @@ body {
   .content { 
     background: $backgroundPage;
     header {
-      background: $backgroundHeader;
+      background: $backgroundHeader;   
+      color: $textColor;
+      h1 {
+        color: $titleColor;
+      }
+      hr {
+        border-color: $hrColor;
+      }      
     }  
   }
 
@@ -31,18 +38,22 @@ body {
           font-size: 1.5rem;
         }
         span {
-          //font-size: ;
+          font-weight: bolder;
+          font-size: .87rem;
         }
       }
       hr {
         width: 100%;
         margin-top: 1rem;
         margin-bottom: 1rem;
+        border-radius: 25%;
       }
       .switcher {
         display: flex;
         width: 100%;
         justify-content: space-between;
+        font-weight: bolder;
+        font-size: .87rem;
       }
     }
   }
