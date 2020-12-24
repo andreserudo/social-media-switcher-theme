@@ -50,6 +50,23 @@ body .content section .medias .item-media:hover {
   background: #e1e3f0;
 }
 
+body .content section .overview .title-overview h2 {
+  color: #1e202a;
+}
+
+body .content section .overview .items .item-overview {
+  background: #f0f2fa;
+  color: #63687e;
+}
+
+body .content section .overview .items .item-overview .info .info-value {
+  color: #1e202a;
+}
+
+body .content section .overview .items .item-overview:hover {
+  background: #e1e3f0;
+}
+
 body .content.dark {
   background: #1e202a;
 }
@@ -115,6 +132,14 @@ body .content.dark section .overview .items .item-overview {
   color: #8b97c6;
 }
 
+body .content.dark section .overview .items .item-overview .info .info-value {
+  color: white;
+}
+
+body .content.dark section .overview .items .item-overview:hover {
+  background: #333a56;
+}
+
 body .content, body .content.dark {
   height: 100vh;
   display: -webkit-box;
@@ -175,6 +200,7 @@ body .content header .switcher, body .content.dark header .switcher {
 
 body .content section, body .content.dark section {
   width: 100%;
+  padding-bottom: 2rem;
 }
 
 body .content section .medias, body .content.dark section .medias {
@@ -300,6 +326,7 @@ body .content section .overview .title-overview, body .content.dark section .ove
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
+  padding-bottom: 2rem;
 }
 
 body .content section .overview .title-overview h2, body .content.dark section .overview .title-overview h2 {
@@ -332,8 +359,11 @@ body .content section .overview .items .item-overview, body .content.dark sectio
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding-top: 1.5rem;
   padding-left: 2rem;
   padding-right: 2rem;
+  padding-bottom: 1.5rem;
+  border-radius: 2px;
 }
 
 body .content section .overview .items .item-overview .title, body .content.dark section .overview .items .item-overview .title {
@@ -343,15 +373,38 @@ body .content section .overview .items .item-overview .title, body .content.dark
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-bottom: 1rem;
+  font-weight: 700;
 }
 
 body .content section .overview .items .item-overview .info, body .content.dark section .overview .items .item-overview .info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .content section .overview .items .item-overview .info .info-value, body .content.dark section .overview .items .item-overview .info .info-value {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+body .content section .overview .items .item-overview .info .percentage, body .content.dark section .overview .items .item-overview .info .percentage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 body .content section .overview .items .item-overview:first-of-type, body .content.dark section .overview .items .item-overview:first-of-type {
+  margin-bottom: 1rem;
+}
+
+body .content section .overview .items .item-overview + .item-overview, body .content.dark section .overview .items .item-overview + .item-overview {
   margin-bottom: 1rem;
 }
 

@@ -32,7 +32,15 @@ section {
     .items {
       .item-overview {
         background: $darkCardColor;
-        color: $darkTextColor;  
+        color: $darkTextColor;
+        .info {
+          .info-value {
+            color: $darkTitleColor;
+          }
+        }
+      }
+      .item-overview:hover {
+        background: $darkCardColorHover;
       }
     }
   }

@@ -25,7 +25,28 @@ body {
         .item-media:hover {
           background: $cardColorHover;
         }        
-      }      
+      }
+      .overview {
+        .title-overview {
+          h2 {
+            color: $titleColor;
+          }  
+        }
+        .items {
+          .item-overview {
+            background: $cardColor;
+            color: $textColor;
+            .info {
+              .info-value {
+                color: $titleColor;
+              }
+            }
+          }
+          .item-overview:hover {
+            background: $cardColorHover;
+          }
+        }
+      }              
     }
   }
 
@@ -37,19 +58,16 @@ body {
   .content, .content.dark {
     height: 100vh;    
     display: flex;
-    flex-direction: column;
-    //align-items: center;    
+    flex-direction: column;    
     header {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      justify-content: center;
-      //width: 100%;
+      justify-content: center;      
       padding: 2.5rem 2rem 6rem 2rem;
       border-bottom-left-radius: 20px;
       border-bottom-right-radius: 20px;
-      .text {
-        //width: 100%;
+      .text {        
         h1 {
           font-size: 1.5rem;
         }
@@ -75,6 +93,7 @@ body {
 
     section {
       width: 100%;
+      padding-bottom: 2rem;
       .medias {
         display: flex;
         flex-direction: column;
@@ -153,8 +172,9 @@ body {
           align-items: center;
           justify-content: center;
           width: 100%;
+          padding-bottom: 2rem;
           h2 {
-            width: 90%;
+            width: 90%;            
           }
         }
         .items {      
@@ -167,19 +187,36 @@ body {
             width: 90%;
             display: flex;
             flex-direction: column;
+            padding-top: 1.5rem;
             padding-left: 2rem;
             padding-right: 2rem;
-            
+            padding-bottom: 1.5rem;
+            border-radius: 2px;
             .title {
               display: flex;
               justify-content: space-between;
+              padding-bottom: 1rem;
+              font-weight: 700;
             }      
             .info {
               display: flex;
+              justify-content: space-between;
+              .info-value {                
+                font-size: 2rem;
+                font-weight: 700;
+              }            
+              .percentage {
+                display: flex;
+                align-items: center;
+              }  
             }
           }
 
           .item-overview:first-of-type {
+            margin-bottom: 1rem;
+          }
+
+          .item-overview + .item-overview {
             margin-bottom: 1rem;
           }
         }
