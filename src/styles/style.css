@@ -170,6 +170,31 @@ body .content header, body .content.dark header {
   border-bottom-right-radius: 20px;
 }
 
+@media only screen and (min-width: 900px) {
+  body .content header, body .content.dark header {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  body .content header .text, body .content.dark header .text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 80%;
+  }
+}
+
 body .content header .text h1, body .content.dark header .text h1 {
   font-size: 1.5rem;
 }
@@ -362,6 +387,12 @@ body .content section .overview, body .content.dark section .overview {
           align-items: center;
 }
 
+@media only screen and (min-width: 900px) {
+  body .content section .overview, body .content.dark section .overview {
+    width: 100%;
+  }
+}
+
 body .content section .overview .title-overview, body .content.dark section .overview .title-overview {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -374,6 +405,15 @@ body .content section .overview .title-overview, body .content.dark section .ove
           justify-content: center;
   width: 100%;
   padding-bottom: 2rem;
+}
+
+@media only screen and (min-width: 900px) {
+  body .content section .overview .title-overview, body .content.dark section .overview .title-overview {
+    width: 76%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
 }
 
 body .content section .overview .title-overview h2, body .content.dark section .overview .title-overview h2 {
@@ -395,6 +435,16 @@ body .content section .overview .items, body .content.dark section .overview .it
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media only screen and (min-width: 900px) {
+  body .content section .overview .items, body .content.dark section .overview .items {
+    width: 76%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 body .content section .overview .items .item-overview, body .content.dark section .overview .items .item-overview {
