@@ -25,4 +25,23 @@ section {
       background: $darkCardColorHover;
     }
   }
+  .overview {
+    h2 {
+      color: $darkTitleColor;
+    }
+    .items {
+      .item-overview {
+        background: $darkCardColor;
+        color: $darkTextColor;
+        .info {
+          .info-value {
+            color: $darkTitleColor;
+          }
+        }
+      }
+      .item-overview:hover {
+        background: $darkCardColorHover;
+      }
+    }
+  }
 }
