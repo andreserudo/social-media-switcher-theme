@@ -1,4 +1,5 @@
-@import "defaultSettings";
+@import "_defaultSettings";
+@import '_mediaQueries';
 
 body {
   .content {     
@@ -58,7 +59,7 @@ body {
   .content, .content.dark {
     height: 100vh;    
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;
     header {
       display: flex;
       flex-direction: column;
@@ -94,12 +95,28 @@ body {
     section {
       width: 100%;
       padding-bottom: 2rem;
+      @include responsive(desktop){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
       .medias {
         display: flex;
         flex-direction: column;
         align-items: center;
         position: relative;
         top: -60px;
+
+        @include responsive(desktop){
+          width: 80%;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+
+          padding-left: 2rem;
+          padding-right: 2rem;
+        }      
+    
         .item-media {      
           width: 90%;
           display: flex;
@@ -138,10 +155,20 @@ body {
 
         .item-media:first-of-type {
           margin-bottom: 1.5rem;
+
+          @include responsive(desktop){
+            margin-bottom: unset;
+            margin-right: 1.5rem;
+          }          
         }
 
         .item-media + .item-media {
           margin-bottom: 1.5rem;
+
+          @include responsive(desktop){
+            margin-bottom: unset;
+            margin-right: 1.5rem;
+          }          
         }
 
         .item-media.facebook {
@@ -236,4 +263,3 @@ body {
     }
   }
 }
-
