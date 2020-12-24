@@ -147,8 +147,42 @@ body {
       .overview {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
+        align-items: center;
+        .title-overview {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          h2 {
+            width: 90%;
+          }
+        }
+        .items {      
+          width: 100%;   
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          .item-overview {
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            
+            .title {
+              display: flex;
+              justify-content: space-between;
+            }      
+            .info {
+              display: flex;
+            }
+          }
+
+          .item-overview:first-of-type {
+            margin-bottom: 1rem;
+          }
+        }
       }
     }
 

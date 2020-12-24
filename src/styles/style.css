@@ -110,7 +110,7 @@ body .content.dark section .overview h2 {
   color: white;
 }
 
-body .content.dark section .overview .items {
+body .content.dark section .overview .items .item-overview {
   background: #252a41;
   color: #8b97c6;
 }
@@ -284,12 +284,75 @@ body .content section .overview, body .content.dark section .overview {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .content section .overview .title-overview, body .content.dark section .overview .title-overview {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 100%;
+}
+
+body .content section .overview .title-overview h2, body .content.dark section .overview .title-overview h2 {
+  width: 90%;
+}
+
+body .content section .overview .items, body .content.dark section .overview .items {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .content section .overview .items .item-overview, body .content.dark section .overview .items .item-overview {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+body .content section .overview .items .item-overview .title, body .content.dark section .overview .items .item-overview .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .content section .overview .items .item-overview .info, body .content.dark section .overview .items .item-overview .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .content section .overview .items .item-overview:first-of-type, body .content.dark section .overview .items .item-overview:first-of-type {
+  margin-bottom: 1rem;
 }
 
 body .content .attribution, body .content.dark .attribution {

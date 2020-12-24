@@ -30,8 +30,10 @@ section {
       color: $darkTitleColor;
     }
     .items {
-      background: $darkCardColor;
-      color: $darkTextColor;
+      .item-overview {
+        background: $darkCardColor;
+        color: $darkTextColor;  
+      }
     }
   }
 }
