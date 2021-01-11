@@ -135,7 +135,7 @@ body {
           align-items: center;
           justify-content: center;
 
-          padding: 2rem 0 1rem 0;
+          //padding: 2rem 0 1rem 0;
           border-radius: 5px;
           cursor: pointer;
           .social {
@@ -183,21 +183,25 @@ body {
         }
 
         .item-media.facebook {
-          border-top: 5px solid $facebookBorderColor;          
+          border-top: 5px solid $facebookBorderColor;       
+          padding: 1rem 0 1rem 0;
         }
 
         .item-media.twitter {
           border-top: 5px solid $twitterBorderColor;
+          padding: 1.15rem 0 1rem 0;
         }
 
         .item-media.instagram {          
           background-repeat: no-repeat;
           background-size: 100% 5px;          
           background-image: $instagramBorderColor;
+          padding: 1.3rem 0 1rem 0;
         }
         
         .item-media.youtube {
           border-top: 5px solid $youtubeBorderColor;
+          padding: 1rem 0 1rem 0;
         }        
       }
 

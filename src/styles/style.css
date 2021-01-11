@@ -291,7 +291,6 @@ body .content section .medias .item-media, body .content.dark section .medias .i
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 2rem 0 1rem 0;
   border-radius: 5px;
   cursor: pointer;
 }
@@ -357,10 +356,12 @@ body .content section .medias .item-media + .item-media, body .content.dark sect
 
 body .content section .medias .item-media.facebook, body .content.dark section .medias .item-media.facebook {
   border-top: 5px solid #1791f5;
+  padding: 1rem 0 1rem 0;
 }
 
 body .content section .medias .item-media.twitter, body .content.dark section .medias .item-media.twitter {
   border-top: 5px solid #1ca0f2;
+  padding: 1.15rem 0 1rem 0;
 }
 
 body .content section .medias .item-media.instagram, body .content.dark section .medias .item-media.instagram {
@@ -368,10 +369,12 @@ body .content section .medias .item-media.instagram, body .content.dark section 
   background-size: 100% 5px;
   background-image: -webkit-gradient(linear, left top, right top, from(#fdc468), to(#df4996));
   background-image: linear-gradient(90deg, #fdc468 0%, #df4996 100%);
+  padding: 1.3rem 0 1rem 0;
 }
 
 body .content section .medias .item-media.youtube, body .content.dark section .medias .item-media.youtube {
   border-top: 5px solid #c4032a;
+  padding: 1rem 0 1rem 0;
 }
 
 body .content section .overview, body .content.dark section .overview {
