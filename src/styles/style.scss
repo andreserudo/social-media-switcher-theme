@@ -1,4 +1,5 @@
-@import "defaultSettings";
+@import "_defaultSettings";
+@import '_mediaQueries';
 
 body {
   .content {     
@@ -58,7 +59,7 @@ body {
   .content, .content.dark {
     height: 100vh;    
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;
     header {
       display: flex;
       flex-direction: column;
@@ -67,7 +68,18 @@ body {
       padding: 2.5rem 2rem 6rem 2rem;
       border-bottom-left-radius: 20px;
       border-bottom-right-radius: 20px;
-      .text {        
+
+      @include responsive(desktop){
+        width: 100%;
+      }
+      .text {
+        @include responsive(desktop){
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          width: 80%;
+        }
         h1 {
           font-size: 1.5rem;
         }
@@ -94,12 +106,28 @@ body {
     section {
       width: 100%;
       padding-bottom: 2rem;
+      @include responsive(desktop){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
       .medias {
         display: flex;
         flex-direction: column;
         align-items: center;
         position: relative;
         top: -60px;
+
+        @include responsive(desktop){
+          width: 80%;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+
+          padding-left: 2rem;
+          padding-right: 2rem;
+        }      
+    
         .item-media {      
           width: 90%;
           display: flex;
@@ -107,7 +135,7 @@ body {
           align-items: center;
           justify-content: center;
 
-          padding: 2rem 0 1rem 0;
+          //padding: 2rem 0 1rem 0;
           border-radius: 5px;
           cursor: pointer;
           .social {
@@ -138,28 +166,42 @@ body {
 
         .item-media:first-of-type {
           margin-bottom: 1.5rem;
+
+          @include responsive(desktop){
+            margin-bottom: unset;
+            margin-right: 1.5rem;
+          }          
         }
 
         .item-media + .item-media {
           margin-bottom: 1.5rem;
+
+          @include responsive(desktop){
+            margin-bottom: unset;
+            margin-right: 1.5rem;
+          }          
         }
 
         .item-media.facebook {
-          border-top: 5px solid $facebookBorderColor;          
+          border-top: 5px solid $facebookBorderColor;       
+          padding: 1rem 0 1rem 0;
         }
 
         .item-media.twitter {
           border-top: 5px solid $twitterBorderColor;
+          padding: 1.15rem 0 1rem 0;
         }
 
         .item-media.instagram {          
           background-repeat: no-repeat;
           background-size: 100% 5px;          
           background-image: $instagramBorderColor;
+          padding: 1.3rem 0 1rem 0;
         }
         
         .item-media.youtube {
           border-top: 5px solid $youtubeBorderColor;
+          padding: 1rem 0 1rem 0;
         }        
       }
 
@@ -167,12 +209,19 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
+        @include responsive(desktop){
+          width: 100%;
+        }
         .title-overview {
           display: flex;
           align-items: center;
           justify-content: center;
           width: 100%;
           padding-bottom: 2rem;
+          @include responsive(desktop){
+            width: 76%;
+            justify-content: flex-start;
+          }
           h2 {
             width: 90%;            
           }
@@ -183,6 +232,11 @@ body {
           flex-direction: column;
           align-items: center;
           justify-content: center;
+          @include responsive(desktop){
+            width: 76%;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+          }
           .item-overview {
             width: 90%;
             display: flex;
@@ -236,4 +290,3 @@ body {
     }
   }
 }
-
