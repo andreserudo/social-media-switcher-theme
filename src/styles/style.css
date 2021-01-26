@@ -33,6 +33,14 @@ body .content header hr {
   border-color: rgba(99, 104, 126, 0.2);
 }
 
+body .content header .switcher .switch-container .slider {
+  background-color: #aeb3ca;
+}
+
+body .content header .switcher .switch-container .slider:before {
+  background-color: #f0f4f7;
+}
+
 body .content section {
   background: white;
 }
@@ -104,6 +112,15 @@ body .content.dark header h1 {
 
 body .content.dark header hr {
   border-color: rgba(139, 151, 198, 0.2);
+}
+
+body .content.dark header .switcher .switch-container .slider {
+  background: -webkit-gradient(linear, left top, right top, from(#378fe6), to(#3eda82));
+  background: linear-gradient(90deg, #378fe6 0%, #3eda82 100%);
+}
+
+body .content.dark header .switcher .switch-container .slider:before {
+  background-color: #282945;
 }
 
 body .content.dark section {
@@ -239,6 +256,11 @@ body .content header .switcher .switch-container .switch input, body .content.da
   height: 0;
 }
 
+body .content header .switcher .switch-container input:checked + .slider:before, body .content.dark header .switcher .switch-container input:checked + .slider:before {
+  -webkit-transform: translateX(22px);
+          transform: translateX(22px);
+}
+
 body .content header .switcher .switch-container .slider, body .content.dark header .switcher .switch-container .slider {
   position: absolute;
   cursor: pointer;
@@ -246,7 +268,6 @@ body .content header .switcher .switch-container .slider, body .content.dark hea
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
   -webkit-transition: .4s;
   transition: .4s;
 }
@@ -258,7 +279,6 @@ body .content header .switcher .switch-container .slider:before, body .content.d
   width: 20px;
   left: 4px;
   bottom: 3px;
-  background-color: white;
   -webkit-transition: .4s;
   transition: .4s;
 }

@@ -11,7 +11,17 @@ body {
       }
       hr {
         border-color: $hrColor;
-      }      
+      }
+      .switcher {
+        .switch-container{
+          .slider {
+            background-color: $backgroundSwitch;
+          }
+          .slider:before{
+            background-color: $switch;
+          }
+        }
+      }    
     }
     section {
       background: $backgroundPage;
@@ -113,6 +123,11 @@ body {
             width: 0;
             height: 0;
           }
+
+          input:checked + .slider:before {
+            transform: translateX(22px);
+          }
+
           .slider {
             position: absolute;
             cursor: pointer;
@@ -120,7 +135,7 @@ body {
             left: 0;
             right: 0;
             bottom: 0;
-            background-color: #ccc;
+            //background-color: #ccc;
             -webkit-transition: .4s;
             transition: .4s;            
           }          
@@ -131,7 +146,7 @@ body {
             width: 20px;
             left: 4px;
             bottom: 3px;
-            background-color: white;
+            //background-color: white;
             -webkit-transition: .4s;
             transition: .4s;
           }

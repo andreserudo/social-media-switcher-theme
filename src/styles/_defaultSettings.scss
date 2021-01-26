@@ -18,6 +18,8 @@ $textColor: hsl(228, 12%, 44%);
 $hrColor: rgba(99, 104, 126, 0.2);
 $cardColor: rgb(240, 242, 250);
 $cardColorHover: rgb(225, 227, 240);
+$backgroundSwitch: rgb(174, 179, 202);
+$switch: rgb(240, 244, 247);
 
 // Dark Theme
 $darkBackgroundPage: rgb(30, 32 ,42);
@@ -27,6 +29,8 @@ $darkTextColor: hsl(228, 34%, 66%);
 $darkHrColor: rgba(139, 151, 198, 0.2);
 $darkCardColor: rgb(37, 42, 65);
 $darkCardColorHover: rgb(51, 58, 86);
+$darkBackgroundSwitch: linear-gradient(90deg, hsl(210, 78%, 56%) 0%, hsl(146, 68%, 55%) 100%);
+$darkSwitch: rgb(40, 41, 69);
 
 // styles matching the arrow up/down icon
 .up {

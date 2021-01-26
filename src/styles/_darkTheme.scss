@@ -9,6 +9,16 @@ header {
   hr {
     border-color: $darkHrColor;
   }
+  .switcher {
+    .switch-container{
+      .slider {        
+        background: $darkBackgroundSwitch;        
+      }
+      .slider:before{
+        background-color: $darkSwitch;        
+      }
+    }
+  }
 }
 
 section {
