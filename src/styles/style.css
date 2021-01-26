@@ -33,6 +33,14 @@ body .content header hr {
   border-color: rgba(99, 104, 126, 0.2);
 }
 
+body .content header .switcher .switch-container .slider {
+  background-color: #aeb3ca;
+}
+
+body .content header .switcher .switch-container .slider:before {
+  background-color: #f0f4f7;
+}
+
 body .content section {
   background: white;
 }
@@ -104,6 +112,15 @@ body .content.dark header h1 {
 
 body .content.dark header hr {
   border-color: rgba(139, 151, 198, 0.2);
+}
+
+body .content.dark header .switcher .switch-container .slider {
+  background: -webkit-gradient(linear, left top, right top, from(#378fe6), to(#3eda82));
+  background: linear-gradient(90deg, #378fe6 0%, #3eda82 100%);
+}
+
+body .content.dark header .switcher .switch-container .slider:before {
+  background-color: #282945;
 }
 
 body .content.dark section {
@@ -215,12 +232,67 @@ body .content header .switcher, body .content.dark header .switcher {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   font-weight: bolder;
-  font-size: .87rem;
+  font-size: .9rem;
+}
+
+body .content header .switcher .switch-container .switch, body .content.dark header .switcher .switch-container .switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 26px;
+}
+
+body .content header .switcher .switch-container .switch input, body .content.dark header .switcher .switch-container .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+body .content header .switcher .switch-container input:checked + .slider:before, body .content.dark header .switcher .switch-container input:checked + .slider:before {
+  -webkit-transform: translateX(22px);
+          transform: translateX(22px);
+}
+
+body .content header .switcher .switch-container .switch:focus, body .content.dark header .switcher .switch-container .switch:focus {
+  outline: none;
+}
+
+body .content header .switcher .switch-container .slider, body .content.dark header .switcher .switch-container .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+body .content header .switcher .switch-container .slider:before, body .content.dark header .switcher .switch-container .slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 3px;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+body .content header .switcher .switch-container .slider.round, body .content.dark header .switcher .switch-container .slider.round {
+  border-radius: 34px;
+}
+
+body .content header .switcher .switch-container .slider.round:before, body .content.dark header .switcher .switch-container .slider.round:before {
+  border-radius: 50%;
 }
 
 body .content section, body .content.dark section {
