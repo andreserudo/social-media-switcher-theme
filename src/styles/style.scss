@@ -128,6 +128,10 @@ body {
             transform: translateX(22px);
           }
 
+          .switch:focus{
+            outline: none;
+          }
+
           .slider {
             position: absolute;
             cursor: pointer;

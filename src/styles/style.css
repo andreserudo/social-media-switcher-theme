@@ -261,6 +261,10 @@ body .content header .switcher .switch-container input:checked + .slider:before,
           transform: translateX(22px);
 }
 
+body .content header .switcher .switch-container .switch:focus, body .content.dark header .switcher .switch-container .switch:focus {
+  outline: none;
+}
+
 body .content header .switcher .switch-container .slider, body .content.dark header .switcher .switch-container .slider {
   position: absolute;
   cursor: pointer;
