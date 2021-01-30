@@ -1,0 +1,86 @@
+
+@mixin desktop-style {
+  body {
+    .content, .content.dark {
+      .container-header {        
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        header {
+          width: 80%;
+          flex-direction: row;
+          justify-content: space-between;
+          padding-left: unset;
+          padding-right: unset;
+          .text {
+            width: unset;
+          }
+          hr {
+            display: none;
+          }
+          .switcher {
+            width: unset;
+            span {
+              padding-right: 1rem;
+            }
+          }
+        }
+      } 
+
+      section {  
+        .container-medias{      
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          .medias {          
+            width: 80%;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+
+            .item-media {
+              margin-bottom: unset;              
+              justify-self: stretch;
+              width: 100%;
+              .media-title {
+                font-size: 3rem;
+              }              
+            }
+          }
+        }
+
+        .container-overview{
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          .overview {
+            width: 80%;
+            justify-content: center;
+            align-items: flex-start;
+            .title-overview {              
+              justify-content: flex-start;
+            }
+            .items {
+              width: 100%;
+              display: grid;
+              grid-template-columns: repeat(4, 1fr);
+              gap: 1rem 2rem;              
+              .item-overview {
+                width: 100%;
+                border-radius: 5px;
+                justify-self: stretch;
+              }
+              .item-overview:first-of-type,
+              .item-overview + .item-overview {
+                margin-bottom: unset;
+              }
+            }            
+          }
+        }
+      }
+
+    }
+  
+  }
+}

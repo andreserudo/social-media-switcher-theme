@@ -1,26 +1,27 @@
 @import "defaultSettings";
 
-header {
+.container-header {
   background: $darkBackgroudHeader;
-  color: $darkTextColor;
-  h1 {
-    color: $darkTitleColor;
-  }
-  hr {
-    border-color: $darkHrColor;
-  }
-  .switcher {
-    .switch-container{
-      .slider {        
-        background: $darkBackgroundSwitch;        
-      }
-      .slider:before{
-        background-color: $darkSwitch;        
+  header {
+    color: $darkTextColor;
+    h1 {
+      color: $darkTitleColor;
+    }
+    hr {
+      border-color: $darkHrColor;
+    }
+    .switcher {
+      .switch-container{
+        .slider {        
+          background: $darkBackgroundSwitch;        
+        }
+        .slider:before{
+          background-color: $darkSwitch;        
+        }
       }
     }
   }
 }
-
 section {
   background: $darkBackgroundPage;
   .medias {
@@ -54,4 +55,7 @@ section {
       }
     }
   }
+}
+.attribution {
+  color: $darkTextColor;
 }

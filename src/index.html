@@ -12,24 +12,27 @@
 </head>
 <body>
   <div id="theme" class="content dark">
-    <header>
-      <div class="text">
-        <h1>Social Media Dashboard</h1>
-        <span>Total Followers: 23,004</span>
-      </div>
-      <hr />      
-      <div class="switcher">
-        <span>Dark Mode</span>
-        <div class="switch-container">
-          <label class="switch">
-            <input id="switchButton" type="checkbox" >
-            <span class="slider round"></span>
-          </label>
+    <div class="container-header">
+      <header>
+        <div class="text">
+          <h1>Social Media Dashboard</h1>
+          <span>Total Followers: 23,004</span>
         </div>
-      </div>      
-    </header>
+        <hr />      
+        <div class="switcher">
+          <span>Dark Mode</span>
+          <div class="switch-container">
+            <label class="switch">
+              <input id="switchButton" type="checkbox" >
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </div>      
+      </header>  
+    </div>
 
     <section>
+      <div class="container-medias">
       <div class="medias">
         <div class="item-media facebook">
           <div class="social">
@@ -80,6 +83,8 @@
           </div>          
         </div>
       </div>
+    </div>
+    <div class="container-overview">
       <div class="overview">
         <div class="title-overview">
           <h2>Overview - Today</h2>
@@ -191,10 +196,11 @@
           </div>  
         </div>
       </div>
+    </div>
     </section>
     <div class="attribution">
       <span>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</span> 
-      <span>Coded by <a href="#">Your Name Here</a>.</span>
+      <span>Coded by <a href="https://github.com/andreserudo"  target="_blank">André Serudo</a>.</span>
     </div>
   </div>  
   <script src="script.js"></script>
