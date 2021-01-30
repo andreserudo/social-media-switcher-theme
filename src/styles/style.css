@@ -190,6 +190,10 @@ body .content header, body .content.dark header {
 @media only screen and (min-width: 900px) {
   body .content header, body .content.dark header {
     width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
@@ -226,6 +230,12 @@ body .content header hr, body .content.dark header hr {
   margin-top: 1rem;
   margin-bottom: 1rem;
   border-radius: 25%;
+}
+
+@media only screen and (min-width: 900px) {
+  body .content header hr, body .content.dark header hr {
+    display: none;
+  }
 }
 
 body .content header .switcher, body .content.dark header .switcher {

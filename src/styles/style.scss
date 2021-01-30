@@ -81,6 +81,7 @@ body {
 
       @include responsive(desktop){
         width: 100%;
+        flex-direction: row;
       }
       .text {
         @include responsive(desktop){
@@ -103,6 +104,9 @@ body {
         margin-top: 1rem;
         margin-bottom: 1rem;
         border-radius: 25%;
+        @include responsive(desktop){
+          display: none;
+        }        
       }
       .switcher {
         display: flex;
