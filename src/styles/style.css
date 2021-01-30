@@ -545,5 +545,41 @@ body .content .attribution a, body .content.dark .attribution a {
   body .content .container-header header .switcher span, body .content.dark .container-header header .switcher span {
     padding-right: 1rem;
   }
+  body .content section .container-medias, body .content.dark section .container-medias {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .content section .container-medias .medias, body .content.dark section .container-medias .medias {
+    width: 80%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .content section .container-medias .medias .item-media, body .content.dark section .container-medias .medias .item-media {
+    margin-bottom: unset;
+  }
+  body .content section .container-medias .medias .item-media .media-title, body .content.dark section .container-medias .medias .item-media .media-title {
+    font-size: 3rem;
+  }
+  body .content section .container-medias .medias .item-media:first-of-type,
+  body .content section .container-medias .medias .item-media + .item-media, body .content.dark section .container-medias .medias .item-media:first-of-type,
+  body .content.dark section .container-medias .medias .item-media + .item-media {
+    margin-right: 2rem;
+  }
+  body .content section .container-medias .medias .item-media:last-of-type, body .content.dark section .container-medias .medias .item-media:last-of-type {
+    margin-right: unset;
+  }
 }
 /*# sourceMappingURL=style.css.map */

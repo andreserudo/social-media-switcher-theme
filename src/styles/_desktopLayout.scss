@@ -28,8 +28,33 @@
         }
       } 
 
-      section {
-        
+      section {  
+        .container-medias{      
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          .medias {          
+            width: 80%;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;  
+            .item-media {
+              margin-bottom: unset;
+              
+              .media-title {
+                font-size: 3rem;
+              }
+              
+            }
+            .item-media:first-of-type,
+            .item-media + .item-media {
+              margin-right: 2rem;
+            }
+            .item-media:last-of-type {
+              margin-right: unset;
+            }
+          }
+        }
       }
 
     }
